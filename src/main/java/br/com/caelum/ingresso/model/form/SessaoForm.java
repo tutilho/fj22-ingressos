@@ -60,7 +60,8 @@ public class SessaoForm {
 	public Sessao toSessao (SalaDao salaDao, FilmeDao filmeDao) {
 		Filme filme = filmeDao.findOne(filmeId);
 		Sala sala = salaDao.findOne(salaId);
-		
+		System.out.println("Valor do filme: " + filme);
+		System.out.println("Valor da sala:" + sala);
 		Sessao sessao = new Sessao (horario, filme, sala);
 		sessao.setId(id);
 		
