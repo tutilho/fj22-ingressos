@@ -20,7 +20,7 @@ public class GerenciadorSessaoTeste {
 	public void deveRetornarFalseQuandoNaoCabe () {
 		LocalTime duasEMeia = LocalTime.of(14, 30);
 		Filme f1 = new Filme ("Harry Potter", Duration.ofMinutes(120), "Aventura", BigDecimal.TEN);
-		Sala sala = new Sala ("3D");
+		Sala sala = new Sala ("3D", BigDecimal.TEN);
 		
 		Sessao s1 = new Sessao (duasEMeia, f1, sala);
 		
@@ -34,7 +34,7 @@ public class GerenciadorSessaoTeste {
 	public void deveRetornarTrueQuandoCabe () {
 		LocalTime duasEMeia = LocalTime.of(14, 30);
 		Filme f1 = new Filme ("Harry Potter", Duration.ofMinutes(120), "Aventura", BigDecimal.TEN);
-		Sala sala = new Sala ("3D");
+		Sala sala = new Sala ("3D", BigDecimal.TEN);
 		
 		Sessao s1 = new Sessao (duasEMeia, f1, sala);
 		
